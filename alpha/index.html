@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microinteraction</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <div class="contain">
+        <h1>Alpha</h1>
+        <p id="intro">For this assignment, I choose the navigation menu of <a href="http://btudesign.com/" id="site">www.btudesign.com</a> to include a simple micro interaction to improve the site with.</p>
+        <div id="subject">
+            <h2>Before</h2>
+            <p>For the before, there was no indication of the "About | Portfolio | Resume | Contact" being a button. Nothing with hovering, clicking, etc.
+            </p>
+            <nav class="bfr"> <!--pop out menu?-->
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="solution">
+            <h2>After</h2>
+            <p>However with the after, my propose solution will improve the visuals by having a clearer indicator that the menu links are clickable aswell as a feedback when interacting with it. Below is a sample of what I want to do. It is subject to change.</p>
+            <nav class="aft"> <!--pop out menu?-->
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <ul id="microA">
+                <li>Trigger: Hover/Click</li>
+                <li>Rule: The background color of the link changes as well as the text color. If the user has visited the link before, the text color will also change.</li>
+                <li>Feedback: A change of color upon hover to further indicate it is a menu button. The color becomes darker/light depending if user is in dark or light mode</li>
+                <li>Loops & Modes: The is one loop in which if the user has visited the link before or not, the color will be different because of that.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
