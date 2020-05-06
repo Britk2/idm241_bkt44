@@ -1,5 +1,5 @@
-@import "normal.css";
-@import "fonts.css";
+@import "../normal.css";
+@import "../fonts.css";
 
 :root{
     --off-white: #ffffff;
