@@ -10,37 +10,82 @@
     <div class="contain">
         <a href="../index.html" id="titleA"><h2>Main Page</h2></a>
         <h1>Beta</h1>
-        <p id="intro">For this assignment, I choose the navigation menu of <a href="http://btudesign.com/" id="site">www.btudesign.com</a> to include a simple micro interaction to improve the site with.</p>
+
+        <p id="intro">For this assignment, I choose the menu and search of <a href="https://roosterteeth.com/" id="site">roosterteeth.com</a> to change and adjust a medium micro interaction to improve the site with. RoosterTeeth is an online media/content creating company based in Austin, Texas. They make original content as well as focusing alot on popculture such as videogames and TV shows.</p>
+
+        <img src="pic/screen.png" alt="Home Screen of roosterteeth.com">
+
         <div id="subject">
             <h2>Before</h2>
-            <p>For the before, there was no indication of the "About | Portfolio | Resume | Contact" being a button. Nothing with hovering, clicking, etc.
-            </p>
             <nav class="bfr"> <!--pop out menu?-->
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+                <div id="menu_b">
+
+                    <h3>Menu</h3>
+                    <p>In the image below, when you hover over the menu, only the text gets lighter. Its a very subtle and it may be hard to notice since the change isnt that noticable.
+                    </p>
+                    <img src="pic/hover_b.png" alt="hover current">
+
+                    <p>However, with the image below, the background color becomes red as a menu drops down, ONLY after you clicked the button. 
+                    </p>
+                    <img src="pic/opening_b.png" alt="opening current">
+
+                    <p>Due to the drop down like this, it causes the menu to have a scroll bar for itself to the right of the menu
+                    </p>
+                    <img src="pic/open_b.png" alt="opened current">
+                </div>
+                <div id="search_b">
+                    <h3>Search Bar</h3>
+                    <p>Another part I want to fix is the search bar. There is the icon at the top right with the magnifying glass. When you hover over the icon, no major noticable feedback is seen. As with the menu, the icon gets lighter/brighter in color which took me a while to notice this happening.
+                    </p>
+
+                    <img src="pic/screen.png" alt="home screen">
+
+                    <p>The search bar slides into view from the right side of the screen with text of SEARCH. However this sliding across seemed weird to me in that you can see the transparent box that makes the rest of the screen darker slide in with the search bar.This box doesn't quite look like a search bar and only a rectangle with text.
+                    </p>
+                    <img src="pic/search_b.png" alt="search bar opened">
+                    
+                </div>
             </nav>
         </div>
         <div id="solution">
             <h2>After</h2>
-            <p>However with the after, my propose solution will improve the visuals by having a clearer indicator that the menu links are clickable aswell as a feedback when interacting with it. Below is a sample of what I want to do. It is subject to change.</p>
             <nav class="aft"> <!--pop out menu?-->
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+                <div id="menu_a">
+
+                    <h3>Menu</h3>
+                    <p>One of the changes I want to make here is the menu button to highlight the whole thing and not just the text getting lighter when you hover over it.
+                    </p>
+                    <img src="pic/hover_a.png" alt="hover current">
+
+                    <p>Then with the drop down, I wish to have it slide out to prevent the scroll bar from apearing when the menu gets too long. It will be a slow fade in as it slides out from the right of the menu outwards to the left.
+                    </p>
+                    <img src="pic/opening_a.png" alt="opening current">
+                    <img src="pic/open_a.png" alt="opened current">
+
+                    <ul>
+                        <li>Trigger: Hover/Click the menu buttons</li>
+                        <li>Rule: The background color will turn red to indicate its a button when hovered. When clicked, the submenu will slide out from the right of the menu, left to right</li>
+                        <li>Feedback: The background color will change upon a trigger. The submenu will show up when menu button is clicked on.</li>
+                        <li>Loops & Modes: One mode is changed. New information (the sub menu) will slide out revealing itself. </li>
+                    </ul>
+                </div>
+                <div id="search_a">
+                    <h3>Search Bar</h3>
+
+                    <p>With the search bar, the adjustments I want to make is to have the icons at the top left to be a bit clearer that its a button by having the whole icon in a rectangle to light up. As for the input field itself, have it show up as a drop down and have the darkened filter fade in as to sliding in from the side.I also wanted it to not be as large and imposing as the original version and made the rectangle thinner. 
+                    </p>
+                    <img src="pic/search_a.png" alt="search bar opened">
+
+                    <ul>
+                        <li>Trigger: Hover/Click the search icon</li>
+                        <li>Rule: The page will darken, fading in, upon click. The search input field will drop down revealing itself</li>
+                        <li>Feedback: 
+                        If hovered, the icon will get lighter.Once clicked, the pages darkens as the search bar drops down from the height of the icon. </li>
+                        <li>Loops & Modes: One mode. The search bar gets revealed upon click of the search icon. </li>
+                    </ul>
+                    
+                </div>
             </nav>
-            <ul id="microA">
-                <li>Trigger: Hover/Click the menu buttons</li>
-                <li>Rule: The background color of the link changes as well as the text color. If the user has visited the link before, the text color will also change.</li>
-                <li>Feedback: A change of color upon hover to further indicate it is a menu button. The color becomes darker/light depending if user is in dark or light mode.</li>
-                <li>Loops & Modes: There is one mode in which if the user has visited the link before or not, the color will be different because of that.</li>
-            </ul>
         </div>
     </div>
 </body>
