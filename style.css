@@ -18,6 +18,15 @@
     --d-line: var(--grey-line); /* divide line */
     --m-color: var(--light-grey); /* menu-background */
 
+
+    /*for the BETA*/
+    --grey-line: #cccccc;
+    --off-black:#272425;
+
+    --bB-back: var(--off-white); /* background */
+    --tB-color: #1D1D1D; /* text-color */
+    --hB-color: #911C21; /* heading-color */
+
     --p-t-f: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --h-t-f: roboto_condensed, Arial, Helvetica, sans-serif;
 }
@@ -45,6 +54,10 @@ html{
     color: var(--t-color);
 }
 
+#home{
+    background-color: var(--off-white);
+}
+
 [hidden] {
     display:none !important;
 }
@@ -54,9 +67,8 @@ html{
 *:after {
 	box-sizing: inherit;
 }
-
 .contain{
-    width:90%;
+    width:95%;
     margin:auto;
 }
 h1, #alpha h2{text-align: center;}
@@ -87,13 +99,50 @@ p{
     list-style: none;
 }
 
-#titleA{
-    color:var(--light-p);
-    margin:0;
-    padding:0;
+h1{
+    margin: 1rem 0 3rem 0;
 }
-#titleA:hover{
+
+.titleA{
+    color:var(--h-color);
+    margin:auto;
+    margin-bottom: 1.5rem;
+    padding:0;
+    text-decoration: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.titleA:hover{
     color: var(--grey-line)
+}
+
+.titleB{
+    color:var(--hB-color);
+    margin:2rem 0;
+    padding:0;
+    text-decoration: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.titleB:hover{
+    color: var(--tB-color);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#home h1{
+    color:var(--dark-grey)
+}
+#betaH{
+    background: var(--bB-back)
+}
+
+#alphaH{
+    padding: 2rem 0;
+    background-color: var(--b-back);
 }
 
 /*Before CSS for nav*/
@@ -132,9 +181,7 @@ padding: 1rem;}
     background: var(--h-color);
     color: var(--b-back);
 }
-.aft a:visited{
-    color:var(--vibe-p);
-}
+
 .aft
 {background: var(--m-color) ;
 border-bottom: 1px solid var(--d-line);
@@ -158,7 +205,8 @@ padding: 1rem;}
         flex-direction: row;
         justify-content: center;}
     li{
-        width: 75ch
+        max-width: 75ch;
+        width: 100%;
     }
 }
 

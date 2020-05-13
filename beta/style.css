@@ -40,12 +40,14 @@ html{
     padding-bottom: 5rem;
 }
 img{
+    max-width: 45rem;
     width: 75%;
     display: block;
     margin: auto;
+    padding-bottom: 2rem;
 }
 
-h1, #alpha h2{text-align: center;}
+h1{text-align: center;}
 h1,h2,h3,h4,h5,h6{
     font-family: var(--h-t-f);
     color:var(--h-color);
@@ -53,7 +55,8 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: var(--p-t-f);
     text-indent: 2rem;
-    width:75ch;
+    width: 100%;
+    max-width:75ch;
     margin: auto;
     padding-bottom: 2rem;
 }
@@ -72,11 +75,6 @@ p{
     color: var(--grey-line)
 }
 
-#menu_b img, #search_b img, #menu_a img, #search_a img{
-    width:35rem;
-    padding-bottom: 2rem;
-}
-
 h3{text-align: center;}
 
 .aft ul
@@ -85,14 +83,50 @@ h3{text-align: center;}
     color: var(--t-color);
     font-weight: bold;
     line-height: 0;
-    margin: 0;
+    margin: auto;
     padding: .5rem 1rem;
-    text-align: justify;}
-.aft ul li
+    text-align: justify;
+    width: 100%;
+    max-width:75ch;
+}
+
+    .aft ul li
 {
     list-style: none;
     line-height: 100%;
     padding: 1rem;
 }
 
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    margin: auto;
+    max-width: 30ch;
+}
+
+#links a{
+    color: var(--h-color);
+    padding: 1rem;
+    background-color: var(--grey-line);
+}
+
+#links a:hover{
+    background-color: var(--t-color);
+}
+
+figcaption{
+    text-align: center;
+}
+
+figure img{
+    max-width: 25rem;
+    padding: .5rem;
+}
+
+#subject h2, #solution h2, #reference h2{
+    background-color: var(--grey-line);
+    padding:1rem;
+}
 
