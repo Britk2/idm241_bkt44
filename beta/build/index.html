@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Beta Build</title>
+		<meta name="description" content="Blueprint: Slide and Push Menus" />
+		<meta name="keywords" content="sliding menu, pushing menu, navigation, responsive, menu, css, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+    </head>
+    <a href="../../index.html" id="titleB"><h2>Main Page</h2></a>
+	<header class="clearfix">
+		<span>Microinteraction</span>
+		<h1>BetaBuild</h1>
+	</header>
+	<body class="cbp-spmenu-push">
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+				<a href="#">ROOSTER TEETH</a>
+				<a href="#">ACHIEVEMENT HUNTER</a>
+				<a href="#">FUNHAUS</a>
+				<a href="#">ANIMATION</a>
+				<a href="#">INSIDE GAMING</a>
+				<a href="#">DEATH BATTLE</a>
+				<a href="#">SUGAR PINE 7</a>
+				<a href="#">COW CHOP</a>
+				<a href="#">KINDA FUNNY</a>
+				<a href="#">FRIENDS OF RT</a>
+			</nav>
+			<div class="container">
+				<div class="main">
+					<section>
+						<!-- Class "cbp-spmenu-open" gets applied to menu -->
+						<button id="showLeft">CHANNELS</button>
+						<button>SERIES</button>
+						<button>EPISODES</button>
+						<button id="live">LIVE</button>
+						<button>SCHEDULE</button>
+						<button>COMMUNITY</button>
+						<button>BLOG</button>
+						<button>STORE</button>
+						<button>RTX AUSTIN</button>
+					</section>
+				</div>
+
+		</div>
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeft = document.getElementById( 'showLeft' ),
+				body = document.body;
+
+			showLeft.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeft' );
+			};
+			function disableOther( button ) {
+				if( button !== 'showLeft' ) {
+					classie.toggle( showLeft, 'disabled' );
+				}
+				if( button !== 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+				}
+				if( button !== 'showTop' ) {
+					classie.toggle( showTop, 'disabled' );
+				}
+				if( button !== 'showBottom' ) {
+					classie.toggle( showBottom, 'disabled' );
+				}
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+        </script>
+    </body>
+    <div id="Microinteraction">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <div id="original">
+            <a href="https://tympanus.net/codrops/2013/04/17/slide-and-push-menus/" target="_blank">Original Code/Reference</a>
+        </div>
+
+        <ul>
+            <li><h3>Trigger</h3>Hover/Click the menu buttons, more specifically the channel button</li>
+            <li><h3>Rule</h3> The background color will turn red to indicate its a button when hovered. When clicked, the submenu will slide out from the right of the menu, left to right</li>
+            <li><h3>Feedback</h3> The background color will change upon a trigger. The submenu will show up when menu button is clicked on.</li>
+            <li><h3>Loops & Modes</h3> One mode is changed. New information (the sub menu) will slide out revealing itself. </li>
+        </ul>
+    </div>
+</html>

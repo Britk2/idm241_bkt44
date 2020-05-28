@@ -1,0 +1,40 @@
+:root{
+	  --off-white: #ffffff;
+    --grey-line: #cccccc;
+    --off-black: #101010;
+    --b-back: --off-white;
+    --t-color: #1D1D1D;
+    --h-color: #911C21;
+}
+
+html{margin-left: 2rem;}
+
+#orginal a:hover{
+  background-color:var(--h-color);
+}
+
+#Microinteraction{
+  margin-top: 5rem;
+}
+
+#Microinteraction ul{
+  width: 100%;
+  max-width: 75ch;
+  margin: auto;
+  position: relative;
+  bottom: 40rem;
+  list-style: none;
+}
+
+#Microinteraction ul li{
+  padding:.5rem;
+}
+
+.main{
+  position: relative;
+  left:.525rem;
+}
+
+#titleB{
+  margin: auto;
+}

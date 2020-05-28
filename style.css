@@ -22,10 +22,11 @@
     /*for the BETA*/
     --grey-line: #cccccc;
     --off-black:#272425;
+    --red-rooster: #911C21;
 
-    --bB-back: var(--off-white); /* background */
+    --bB-back: var(--off-black); /* background */
     --tB-color: #1D1D1D; /* text-color */
-    --hB-color: #911C21; /* heading-color */
+    --hB-color: --grey-line; /* heading-color */
 
     --p-t-f: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --h-t-f: roboto_condensed, Arial, Helvetica, sans-serif;
@@ -105,15 +106,16 @@ h1{
 
 .titleA{
     color:var(--h-color);
-    margin:auto;
-    margin-bottom: 1.5rem;
+    margin:2rem 0;
     padding:0;
     text-decoration: none;
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
+
 .titleA:hover{
-    color: var(--grey-line)
+    color: var(--dark-grey);
+    background: var(--grey-line)
 }
 
 .titleB{
@@ -125,7 +127,7 @@ h1{
     border-bottom: 2px solid;
 }
 .titleB:hover{
-    color: var(--tB-color);
+    color: var(--red-rooster);
 }
 
 header{
@@ -136,12 +138,14 @@ header{
 #home h1{
     color:var(--dark-grey)
 }
+
+#alphaH, #betaH{ margin-bottom: 1rem;}
+
 #betaH{
-    background: var(--bB-back)
+    background: var(--bB-back);
 }
 
 #alphaH{
-    padding: 2rem 0;
     background-color: var(--b-back);
 }
 
