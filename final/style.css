@@ -1,0 +1,115 @@
+@import "../normal.css";
+@import "../fonts.css";
+
+:root{
+    --off-white: #ffffff;
+    --grey-line: #cccccc;
+    --off-black:#272425;
+    --light_h: #C6CAED;
+
+    --b-back: --off-white; /* background */
+    --t-color: #707070; /* text-color */
+    --h-color: #2D3047; /* heading-color */
+
+    --p-t-f: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --h-t-f: roboto_condensed, Arial, Helvetica, sans-serif;
+}
+
+
+html{
+    font-size:100%;
+    box-sizing: border-box;
+    margin: auto;
+    display: block;
+    background-color: var(--b-back);
+    color: var(--t-color);
+}
+
+[hidden] {
+    display:none !important;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.contain{
+    width:90%;
+    margin:auto;
+    padding-bottom: 5rem;
+}
+
+body{
+    padding: 2rem;
+}
+
+img{
+    max-width: 45rem;
+    width: 75%;
+    display: block;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+h1{text-align: center;}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--h-t-f);
+    color:var(--h-color);
+}
+p{
+    font-family: var(--p-t-f);
+    text-indent: 2rem;
+    width: 100%;
+    max-width:75ch;
+    margin: auto;
+    padding-bottom: 2rem;
+    font-size: 125%;
+}
+
+#site{
+    color: var(--t-color);
+}
+
+#titleF{
+    color:var(--h-color);
+    margin:0;
+    padding:0;
+}
+#titleF:hover{
+    color: var(--grey-line)
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    margin: auto;
+    max-width: 30ch;
+}
+
+ul{
+    width:75%;
+    max-width: 65ch;
+    margin: auto;
+    font-size: 125%;
+    line-height: 1.5;
+    list-style: none;
+}
+
+#links a{
+    color: var(--h-color);
+    padding: 1rem;
+    background-color: var(--grey-line);
+}
+
+#links a:hover{
+    background-color: var(--t-color);
+}
+
+#reference h2{
+    background-color: var(--light_h);
+    padding: 1rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Build</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown-submenu {
+          position: relative;
+        }
+        
+        .dropdown-submenu .dropdown-menu {
+          top: 0;
+          left: 100%;
+          margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html" id="titleF"><h2>Main Page</h2></a>
+        <h1>Final Build</h1>                                     
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filter
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li>
+                <a class="test" tabindex="-1" href="#">by Protein <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Chiken</a></li>
+                <li><a href="#">Beef</a></li>
+                <li><a href="#">Pork</a></li>
+                <li><a href="#">Turkey</a></li>
+                <li><a href="#">Fish</a></li>
+                <li><a href="#">Shrimp</a></li>
+              </ul>
+            </li>
+            <li>
+                <a tabindex="-1" href="#">by Calories</a>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1" href="#">by Servings <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">2 Servings</a></li>
+                <li><a href="#">4 Servings</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+            <li><h3>Trigger: </h3>Clicking the dropdown menu of the filter</li>
+            <li><h3>Rule:</h3> Once the useer clicks the filter, the list of categories get revealed.</li>
+            <li><h3>Feedback: </h3> User sees a drop down getting revealed with list of options</li>
+            <li><h3>Loops & Modes: </h3>New information is revealed upon click of the filter. Reveals the categories that the user can filter the recipes by. </li>
+        </ul>
+      </div>
+      
+      <script>
+      $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
+      });
+      </script>
+      
+</body>
+</html>
