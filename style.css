@@ -30,6 +30,14 @@
 
     --p-t-f: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --h-t-f: roboto_condensed, Arial, Helvetica, sans-serif;
+
+    /*For Final and Case Study*/
+    --background-c: #F7F7F9; /*background color*/
+    --text_c: #707070; /*text color*/
+    --dark_h: #2D3047; /*dark header*/
+    --light_h: #C6CAED; /*light header*/
+    --light_c: #FFFFFF; /*light color*/
+    --footer_bc: #E8E9F3; /*footer background color*/
 }
 
 @media (prefers-color-scheme: dark){
@@ -130,6 +138,31 @@ h1{
     color: var(--red-rooster);
 }
 
+.titleF{
+    color:var(--dark_h);
+    margin:2rem 0;
+    padding:0;
+    text-decoration: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.titleF:hover{
+    color: var(--light_h);
+}
+
+
+.titleC{
+    color:var(--dark_h);
+    margin:2rem 0;
+    padding:0;
+    text-decoration: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.titleC:hover{
+    color: var(--light_h);
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -147,6 +180,10 @@ header{
 
 #alphaH{
     background-color: var(--b-back);
+}
+
+#finalH{
+    background-color: var(--footer_bc);
 }
 
 /*Before CSS for nav*/
