@@ -62,11 +62,11 @@ h2:hover, a:hover{
 
 img{
     display: block;
-    margin: auto;
     text-align: center;
     box-shadow: 2px 2px 5px var(--text_c);
     width:85%;
     max-width: 50rem;
+    margin: 2rem auto;
 }
 
 p{
